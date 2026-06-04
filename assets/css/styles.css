@@ -1293,18 +1293,27 @@ h3 {
   height: 42px;
   margin: 0;
   border-radius: 50%;
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.045);
-  color: var(--cream);
-  font-size: 0.82rem;
-  font-weight: 1000;
+
+  border: 1px solid rgba(212, 164, 90, 0.35);
+  background: rgba(255, 255, 255, 0.05);
+
+  color: #D4A45A;
+  font-size: 18px;
+
+  transition: all .35s ease;
 }
 
 .socials a:hover {
-  border-color: rgba(244, 192, 103, 0.42);
-  background: rgba(244, 192, 103, 0.12);
-}
+  transform: translateY(-4px);
 
+  border-color: #D4A45A;
+  background: #D4A45A;
+  color: #fff;
+
+  box-shadow:
+    0 0 15px rgba(212, 164, 90, .4),
+    0 0 30px rgba(212, 164, 90, .15);
+}
 .socials-large a {
   width: 48px;
   height: 48px;
