@@ -1,0 +1,21 @@
+{
+  "name": "CV. Ridho Utama Berkah",
+  "short_name": "Ridho Kopi",
+  "description": "Distributor kopi modern dari Sumatera Utara.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#090503",
+  "theme_color": "#090503",
+  "icons": [
+    {
+      "src": "assets/images/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/apple-touch-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
