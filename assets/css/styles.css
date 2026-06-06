@@ -2218,3 +2218,79 @@ h3 {
         border-radius: 28px;
     }
 }
+
+/* ABOUT HOMEPAGE PREVIEW */
+
+.about-tags{
+    margin: 24px 0 26px;
+}
+
+.about-preview-card{
+    position: relative;
+    min-height: 520px;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: var(--panel-solid);
+    box-shadow: var(--shadow);
+}
+
+.about-preview-card img{
+    width: 100%;
+    height: 100%;
+    min-height: 520px;
+    object-fit: cover;
+    filter: brightness(.72) contrast(1.08) saturate(1.05);
+    transform: scale(1.04);
+    transition: transform .8s ease, filter .35s ease;
+}
+
+.about-preview-card:hover img{
+    transform: scale(1.1);
+    filter: brightness(.82) contrast(1.12) saturate(1.08);
+}
+
+.about-preview-card::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, transparent 25%, rgba(9,5,3,.86) 100%),
+        radial-gradient(circle at 50% 20%, transparent 18%, rgba(9,5,3,.30) 68%);
+}
+
+.about-preview-caption{
+    position: absolute;
+    left: 26px;
+    right: 26px;
+    bottom: 26px;
+    z-index: 2;
+}
+
+.about-preview-caption span{
+    display: inline-flex;
+    min-height: 32px;
+    align-items: center;
+    padding: 0 12px;
+    margin-bottom: 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(244,192,103,.28);
+    background: rgba(244,192,103,.10);
+    color: var(--gold);
+    font-size: .72rem;
+    font-weight: 900;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.about-preview-caption h3{
+    max-width: 430px;
+    margin: 0;
+}
+
+@media (max-width: 820px){
+    .about-preview-card,
+    .about-preview-card img{
+        min-height: 360px;
+    }
+}
