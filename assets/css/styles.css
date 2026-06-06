@@ -1880,3 +1880,48 @@ h3 {
     display: none;
   }
 }
+
+/* PRODUCT CARD BACKGROUND IMAGES */
+
+.product-card > *{
+    position: relative;
+    z-index: 1;
+}
+
+.product-green::after,
+.product-roasted::after,
+.product-ground::after,
+.product-export::after{
+    content:'';
+    position:absolute;
+    inset:0;
+
+    background-size:cover;
+    background-position:center;
+
+    opacity:.18;
+
+    z-index:0;
+
+    transition:transform .8s ease;
+}
+
+.product-green::after{
+    background-image:url('../images/green-bean.jpg');
+}
+
+.product-roasted::after{
+    background-image:url('../images/roasted-bean.jpg');
+}
+
+.product-ground::after{
+    background-image:url('../images/ground-coffee.jpg');
+}
+
+.product-export::after{
+    background-image:url('../images/export-coffee.jpg');
+}
+
+.product-card:hover::after{
+    transform:scale(1.08);
+}
